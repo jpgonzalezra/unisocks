@@ -89,7 +89,7 @@ export default function Confirmed({ hash, type, amount, clearLastTransaction, cl
           <ImgStyle src={sent} alt="Logo" />
           <InfoFrame>
             <Owned>
-              <p> {`You got ${amountFormatter(amount, 18, 0)} SOCKS!`}</p>
+              <p> {`You got ${amountFormatter(amount, 18, 0)} MTB!`}</p>
             </Owned>
           </InfoFrame>
         </TopFrame>
@@ -99,7 +99,7 @@ export default function Confirmed({ hash, type, amount, clearLastTransaction, cl
           </EtherscanLink>
         </CheckoutPrompt>
         <ButtonFrame
-          text={`Redeem your SOCKS now`}
+          text={`Redeem your MTB now`}
           type={'cta'}
           onClick={() => {
             clearLastTransaction()
@@ -118,7 +118,7 @@ export default function Confirmed({ hash, type, amount, clearLastTransaction, cl
           <ImgStyle src={sent} alt="Logo" />
           <InfoFrame>
             <Owned>
-              <p>You sold socks!</p>
+              <p>You sold wine!</p>
             </Owned>
           </InfoFrame>
         </TopFrame>
@@ -217,7 +217,7 @@ const CheckoutPrompt = styled.p`
 `
 const EtherscanLink = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.uniswapPink};
+  color: ${props => props.theme.viniswapOrange};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

@@ -1,3 +1,3 @@
-# [Unisocks](https://unisocks.exchange)
+# [Viniswap](https://unisocks.exchange)
 
 An experiment in dynamically priced merch.

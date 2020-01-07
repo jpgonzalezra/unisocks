@@ -95,7 +95,7 @@ export default function Redeem({
         <ButtonFrame
           className="button"
           disabled={false}
-          text={account === null ? 'Connect Wallet' : 'Redeem SOCKS'}
+          text={account === null ? 'Connect Wallet' : 'Redeem MTB'}
           type={'cta'}
           onClick={() => {
             setConnector('Injected', { suppressAndThrowErrors: true }).catch(() => {
@@ -113,7 +113,7 @@ export default function Redeem({
             <InfoFrame pending={pending}>
               <Owned>
                 <SockCount>You own {balanceSOCKS && `${amountFormatter(balanceSOCKS, 18, 0)}`}</SockCount>
-                <p>Redeem SOCKS</p>
+                <p>Redeem MTB</p>
               </Owned>
               <IncrementToken
                 initialValue={Number(amountFormatter(balanceSOCKS, 18, 0))}
@@ -142,9 +142,8 @@ export default function Redeem({
             <InfoFrame hasPickedAmount={hasPickedAmount}>
               <ImgStyle src={test} alt="Logo" hasPickedAmount={hasPickedAmount} />
               <Owned>
-                <p>{state.count} Unisocks</p>
-                <p style={{ fontSize: '20px', fontWeight: '400', color: '#AEAEAE' }}>One size fits most</p>
-                <p style={{ fontSize: '14px', fontWeight: '500', marginTop: '16px', color: '#AEAEAE' }}>Edition 0</p>
+                <p>{state.count} Viniswap</p>
+                <p style={{ fontSize: '14px', fontWeight: '500', marginTop: '16px', color: '#AEAEAE' }}>Edition MTB18</p>
               </Owned>
             </InfoFrame>
           </TopFrame>
@@ -177,7 +176,7 @@ export default function Redeem({
             <InfoFrame hasPickedAmount={hasPickedAmount}>
               <ImgStyle src={test} alt="Logo" hasPickedAmount={hasPickedAmount} />
               <Owned>
-                <p style={{ fontSize: '18px' }}>{state.count} Unisocks</p>
+                <p style={{ fontSize: '18px' }}>{state.count} Viniswap</p>
                 <p style={{ fontSize: '14px', fontWeight: '500' }}>One size fits most</p>
                 <p
                   style={{
@@ -196,7 +195,7 @@ export default function Redeem({
               <ImgStyle src={nfc} alt="Logo" hasPickedAmount={hasPickedAmount} />
               <Bonus>Bonus</Bonus>
               <Owned>
-                <p style={{ fontSize: '18px' }}>{state.count} Unisocks NFT</p>
+                <p style={{ fontSize: '18px' }}>{state.count} Viniswap NFT</p>
                 <p style={{ fontSize: '14px', fontWeight: '500' }}>Digital Collectible (10kb)</p>
                 <p
                   style={{
@@ -221,13 +220,13 @@ export default function Redeem({
             back
           </Back>
           <Count>2/3</Count>
-          <CheckoutPrompt>BURN THE SOCKS?</CheckoutPrompt> */}
+          <CheckoutPrompt>BURN THE MTB?</CheckoutPrompt> */}
           <ButtonFrame
             className="button"
             disabled={pending}
             pending={pending}
-            // text={pending ? `Waiting for confirmation...` : `Redeem ${numberBurned} SOCKS`}
-            text={pending ? `Waiting for confirmation...` : `Place order (Redeem ${numberBurned} SOCKS) `}
+            // text={pending ? `Waiting for confirmation...` : `Redeem ${numberBurned} MTB`}
+            text={pending ? `Waiting for confirmation...` : `Place order (Redeem ${numberBurned} MTB) `}
             type={'cta'}
             onClick={() => {
               burn(numberBurned.toString())
@@ -269,7 +268,7 @@ export default function Redeem({
             <ImgStyle src={sent} alt="Logo" hasPickedAmount={hasPickedAmount} hasBurnt={hasBurnt} />
             <InfoFrame>
               <Owned>
-                <p>You got socks!</p>
+                <p>You got wine!</p>
               </Owned>
             </InfoFrame>
           </TopFrame>
@@ -381,7 +380,7 @@ const Bonus = styled.div`
   font-weight: 500;
   font-size: 12px;
   padding: 4px;
-  background-color: ${props => props.theme.uniswapPink};
+  background-color: ${props => props.theme.viniswapOrange};
   border-radius: 4px;
   position: absolute;
   top: 200px;
@@ -399,7 +398,7 @@ const SockCount = styled.span`
   font-size: 14px;
   width: 100%;
   margin-bottom: 0.5rem;
-  color: ${props => props.theme.uniswapPink};
+  color: ${props => props.theme.viniswapOrange};
   cursor: pointer;
 
   :hover {
@@ -417,7 +416,7 @@ const Back = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: ${props => props.theme.uniswapPink}; */
+  /* color: ${props => props.theme.viniswapOrange}; */
   text-align: center;
   span {
     cursor: pointer;
@@ -449,7 +448,7 @@ const RedeemFrame = styled(RedeemForm)`
 
 const EtherscanLink = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.uniswapPink};
+  color: ${props => props.theme.viniswapOrange};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

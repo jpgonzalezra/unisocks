@@ -24,18 +24,18 @@ const ButtonFrame = styled.button`
   opacity: ${props => (props.disabled ? 1 : 1)};
   pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
   border-width: ${props => (props.type === 'cta' ? '0px' : props.disabled ? '0px' : '1px')};
-  border-color: ${props => (props.type === 'cta' ? 'none' : props.disabled ? 'none' : props.theme.uniswapPink)};
+  border-color: ${props => (props.type === 'cta' ? 'none' : props.disabled ? 'none' : props.theme.viniswapOrange)};
   background: ${props =>
     props.type === 'cta'
       ? props.disabled
         ? // ? 'linear-gradient(97.28deg, rgba(254, 109, 222, 0.2) 2.08%, rgba(255, 157, 234, 0.2) 106.51%)'
           '#f1f2f6'
-        : 'linear-gradient(97.28deg, #fe6dde 2.08%, #ff9dea 106.51%)'
+        : 'linear-gradient(97.28deg, #d5841b 2.08%, #e9a853 106.51%)'
       : props.disabled // ? 'linear-gradient(97.28deg, rgba(254, 109, 222, 0.2) 2.08%, rgba(255, 157, 234, 0.2) 106.51%)'
       ? '#f1f2f6'
       : 'none'};
   box-shadow: ${props =>
-    props.type === 'cta' ? (props.disabled ? 'none' : '0px 4px 20px rgba(239, 162, 250, 0.7)') : 'none'};
+    props.type === 'cta' ? (props.disabled ? 'none' : '0px 4px 20px rgba(239, 191, 128, 0.7)') : 'none'};
 
   color: ${props =>
     props.type === 'cta'
@@ -44,7 +44,7 @@ const ButtonFrame = styled.button`
         : props.theme.white
       : props.disabled
       ? '#aeaeae'
-      : props.theme.uniswapPink};
+      : props.theme.viniswapOrange};
   transform: scale(1);
   transition: transform 0.3s ease;
 

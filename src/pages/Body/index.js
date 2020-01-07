@@ -23,10 +23,6 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
     <HeaderFrame balanceSOCKS={balanceSOCKS}>
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <Unicorn>
-          <span role="img" aria-label="unicorn">
-            🦄
-          </span>{' '}
-          Unisocks
         </Unicorn>
       </Link>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -43,7 +39,7 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
         <Account onClick={() => handleAccount()} balanceSOCKS={balanceSOCKS}>
           {account ? (
             balanceSOCKS > 0 ? (
-              <SockCount>{balanceSOCKS && `${amountFormatter(balanceSOCKS, 18, 0)}`} SOCKS</SockCount>
+              <SockCount>{balanceSOCKS && `${amountFormatter(balanceSOCKS, 18, 0)}`} MTB</SockCount>
             ) : (
               <SockCount>{account.slice(0, 6)}...</SockCount>
             )
@@ -173,7 +169,7 @@ export default function Body({
       <Content>
         <Card totalSupply={totalSupply} dollarPrice={dollarPrice} reserveSOCKSToken={reserveSOCKSToken} />{' '}
         <Info>
-          <div style={{ marginBottom: '4px' }}>Buy and sell real socks with digital currency.</div>
+          <div style={{ marginBottom: '4px' }}>Buy and sell real wine with digital currency.</div>
           <div style={{ marginBottom: '4px' }}>
             Delivered on demand.{' '}
             <a
@@ -271,7 +267,7 @@ const Info = styled.div`
   /* margin-top: 16px; */
   background-color: ${props => '#f1f2f6'};
   a {
-    color: ${props => props.theme.uniswapPink};
+    color: ${props => props.theme.viniswapOrange};
     text-decoration: none;
     /* padding-top: 8px; */
     /* font-size: 14px; */
@@ -283,13 +279,13 @@ const Info = styled.div`
 `
 
 const OrderStatusLink = styled.p`
-  color: ${props => props.theme.uniswapPink};
+  color: ${props => props.theme.viniswapOrange};
   text-align: center;
   font-size: 0.6rem;
 `
 
 const Unicorn = styled.p`
-  color: ${props => props.theme.uniswapPink};
+  color: ${props => props.theme.viniswapOrange};
   font-weight: 600;
   margin: auto 0px;
   font-size: 16px;

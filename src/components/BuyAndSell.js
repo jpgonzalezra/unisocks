@@ -106,13 +106,13 @@ export default function BuyAndSell({
         if (pending && hash) {
           return 'Waiting for confirmation'
         } else {
-          return 'Sell Socks'
+          return 'Sell Wine'
         }
       } else {
         if (pending && hash) {
           return 'Waiting for confirmation'
         } else {
-          return 'Buy Socks'
+          return 'Buy Wine'
         }
       }
     } else {
@@ -244,7 +244,7 @@ export default function BuyAndSell({
       )}
       {shouldRenderUnlock ? (
         <ButtonFrame
-          text={`Unlock ${buying ? selectedTokenSymbol : 'SOCKS'}`}
+          text={`Unlock ${buying ? selectedTokenSymbol : 'MTB'}`}
           type={'cta'}
           pending={pending}
           onClick={() => {
@@ -368,7 +368,7 @@ const ButtonFrame = styled(Button)`
 
 const EtherscanLink = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.uniswapPink};
+  color: ${props => props.theme.viniswapOrange};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

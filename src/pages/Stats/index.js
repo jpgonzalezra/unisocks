@@ -11,46 +11,39 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
     <AppWrapper overlay={state.visible}>
       <Header totalSupply={totalSupply} ready={ready} balanceSOCKS={balanceSOCKS} setShowConnect={() => {}} />
       <Content>
-        <Title>SOCKS Stats</Title>
+        <Title>MTB Stats</Title>
         <Description>
           <p>
-            <span role="img" aria-label="socks">
+            <span role="img" aria-label="wine">
               🧦
             </span>
-            Initial SOCKS
+            Initial MTB
           </p>
           <p>500</p>
         </Description>
         <Description>
           <p>
-            <span role="img" aria-label="socks">
+            <span role="img" aria-label="wine">
               🔥
             </span>
-            Redeemed SOCKS
+            Redeemed MTB
           </p>
           <p>{500 - totalSupply}</p>
         </Description>
         <Description>
           <p>
-            <span role="img" aria-label="socks">
+            <span role="img" aria-label="wine">
               💦
             </span>
-            SOCKS Pool
+            MTB Pool
           </p>
           <p>{amountFormatter(reserveSOCKSToken, 18, 0)}</p>
         </Description>
         <Shim />
         <Footer>
-          The price of SOCKS changes when tokens are bought and sold.
+          The price of MTB changes when tokens are bought and sold.
           <br />
           <br />
-          <a
-            href="https://medium.com/frst/money-laundry-the-rise-of-the-crypto-sock-market-f979aafc3796"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read more.
-          </a>
         </Footer>
       </Content>
     </AppWrapper>
@@ -65,7 +58,7 @@ const Footer = styled.p`
 
   a {
     text-decoration: none;
-    color: #fe6dde;
+    color: #d5841b;
     margin-bottom: 1rem;
   }
 `

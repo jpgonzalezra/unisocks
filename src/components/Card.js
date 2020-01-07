@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import Tilt from 'react-tilt'
 
 import { amountFormatter } from '../utils'
@@ -14,8 +13,8 @@ export default function Card({ totalSupply, dollarPrice, reserveSOCKSToken }) {
       options={{ scale: 1.01, max: 10, glare: true, 'max-glare': 1, speed: 1000 }}
     >
       <CardWrapper>
-        <Title>Unisocks Edition 0</Title>
-        <SubTitle>$SOCKS</SubTitle>
+        <Title>Viniswap</Title>
+        <SubTitle>$MTB18</SubTitle>
         <Gallery />
         <MarketData>
           <span>
@@ -26,12 +25,6 @@ export default function Card({ totalSupply, dollarPrice, reserveSOCKSToken }) {
                 : ''}
             </SockCount>
           </span>
-          <Link to="/stats">
-            <Info>
-              <InfoButton>?</InfoButton>
-              <Dynamic>Dynamic Pricing Stats</Dynamic>
-            </Info>
-          </Link>
         </MarketData>
       </CardWrapper>
     </Tilt>
@@ -90,33 +83,6 @@ const CurrentPrice = styled.p`
   margin: 0px;
   margin-bottom: 0.5rem;
   font-feature-settings: 'tnum' on, 'onum' on;
-`
-
-const Info = styled.div`
-  /* margin-bottom: -2px; */
-`
-
-const Dynamic = styled.p`
-  color: #aeaeae;
-  font-style: italic;
-  font-weight: 400;
-  margin: 0px;
-  margin-top: 1px;
-  font-size: 12px;
-  float: left;
-`
-
-const InfoButton = styled.span`
-  width: 16px;
-  height: 16px;
-  font-size: 12px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 50%;
-  margin-left: 8px;
-  float: right;
-  background-color: #5ca2ff;
 `
 
 const MarketData = styled.div`

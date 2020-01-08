@@ -19,7 +19,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
             </span>
             Initial MTB
           </p>
-          <p>500</p>
+          <p>16384</p>
         </Description>
         <Description>
           <p>
@@ -28,7 +28,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
             </span>
             Redeemed MTB
           </p>
-          <p>{500 - totalSupply}</p>
+          <p>{16384 - totalSupply}</p>
         </Description>
         <Description>
           <p>

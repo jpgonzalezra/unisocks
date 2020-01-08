@@ -32,7 +32,7 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
               <span role="img" aria-label="fire">
                 🔥
               </span>{' '}
-              {500 - totalSupply} <HideMobile>redeemed</HideMobile>
+              {16384 - totalSupply} <HideMobile>redeemed</HideMobile>
             </Burned>
           </Link>
         )}

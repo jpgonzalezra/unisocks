@@ -8,7 +8,7 @@ import Web3ReactManager from '../components/Web3ReactManager'
 import AppProvider from '../context'
 import Main from './Main'
 
-const PROVIDER_URL = process.env.REACT_APP_PROVIDER_URL
+const PROVIDER_URL = "https://mainnet.infura.io/v3/f4cf1001497f4df18bc6bed97fc6ae80"
 
 const { NetworkOnlyConnector, InjectedConnector, WalletConnectConnector } = Connectors
 const Network = new NetworkOnlyConnector({

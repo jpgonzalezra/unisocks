@@ -310,7 +310,7 @@ const FormFrame = styled.form`
     border-radius: 4px;
   }
   input:required {
-    box-shadow: inset 0 0 0 1px rgba(254, 109, 222, 0.5);
+    box-shadow: inset 0 0 0 1px rgba(213, 132, 27, 0.5);
   }
   input:valid {
     border: nne;

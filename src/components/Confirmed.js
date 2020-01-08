@@ -23,7 +23,6 @@ function Controls({ closeCheckout }) {
     <FrameControls>
       <Unicorn>
         <span role="img" aria-label="unicorn">
-          🦄
         </span>{' '}
         Pay
       </Unicorn>

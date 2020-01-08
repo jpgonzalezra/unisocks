@@ -205,7 +205,6 @@ export default function BuyAndSell({
         {/* <button onClick={() => fake()}>test</button> */}
         <Unicorn>
           <span role="img" aria-label="unicorn">
-            🦄
           </span>{' '}
           Pay
         </Unicorn>

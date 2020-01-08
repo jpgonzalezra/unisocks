@@ -21,20 +21,19 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
 
   return (
     <HeaderFrame balanceSOCKS={balanceSOCKS}>
+
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <Unicorn>
         </Unicorn>
       </Link>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         {totalSupply && (
-          <Link to="/stats" style={{ textDecoration: 'none' }}>
-            <Burned>
-              <span role="img" aria-label="fire">
-                🔥
-              </span>{' '}
-              {16384 - totalSupply} <HideMobile>redeemed</HideMobile>
-            </Burned>
-          </Link>
+          <Burned>
+            <span role="img" aria-label="fire">
+              🔥
+            </span>{' '}
+            {16384 - totalSupply} <HideMobile>redeemed</HideMobile>
+          </Burned>
         )}
         <Account onClick={() => handleAccount()} balanceSOCKS={balanceSOCKS}>
           {account ? (

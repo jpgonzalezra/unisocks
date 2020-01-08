@@ -51,7 +51,7 @@ export function Controls({ closeCheckout, theme, type }) {
 
 export default function Redeem({
   burn,
-  balanceSOCKS,
+  balanceWINES,
   balance,
   ready,
   unlock,
@@ -111,12 +111,12 @@ export default function Redeem({
             <ImgStyle src={test} alt="Logo" hasPickedAmount={hasPickedAmount} />
             <InfoFrame pending={pending}>
               <Owned>
-                <SockCount>You own {balanceSOCKS && `${amountFormatter(balanceSOCKS, 18, 0)}`}</SockCount>
+                <WineCount>You own {balanceWINES && `${amountFormatter(balanceWINES, 18, 0)}`}</WineCount>
                 <p>Redeem MTB</p>
               </Owned>
               <IncrementToken
-                initialValue={Number(amountFormatter(balanceSOCKS, 18, 0))}
-                max={Number(amountFormatter(balanceSOCKS, 18, 0))}
+                initialValue={Number(amountFormatter(balanceWINES, 18, 0))}
+                max={Number(amountFormatter(balanceWINES, 18, 0))}
               />
             </InfoFrame>
           </TopFrame>
@@ -391,7 +391,7 @@ const ImgStyle = styled.img`
   padding: ${props => (props.hasPickedAmount ? (props.hasBurnt ? '0px' : '0 1rem 0 0') : '2rem 0 2rem 0')};
   box-sizing: border-box;
 `
-const SockCount = styled.span`
+const WineCount = styled.span`
   color: #aeaeae;
   font-weight: 400;
   font-size: 14px;

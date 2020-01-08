@@ -6,7 +6,7 @@ import { amountFormatter } from '../utils'
 
 import Gallery from './Gallery'
 
-export default function Card({ totalSupply, dollarPrice, reserveSOCKSToken }) {
+export default function Card({ totalSupply, dollarPrice, reserveWINESToken }) {
   return (
     <Tilt
       style={{ background: '#000', borderRadius: '8px' }}
@@ -19,11 +19,11 @@ export default function Card({ totalSupply, dollarPrice, reserveSOCKSToken }) {
         <MarketData>
           <span>
             <CurrentPrice>{dollarPrice ? `$${amountFormatter(dollarPrice, 18, 2)} USD` : '$0.00'}</CurrentPrice>
-            <SockCount>
-              {reserveSOCKSToken && totalSupply
-                ? `${amountFormatter(reserveSOCKSToken, 18, 0)}/${totalSupply} available`
+            <WineCount>
+              {reserveWINESToken && totalSupply
+                ? `${amountFormatter(reserveWINESToken, 18, 0)}/${totalSupply} available`
                 : ''}
-            </SockCount>
+            </WineCount>
           </span>
         </MarketData>
       </CardWrapper>
@@ -69,7 +69,7 @@ const SubTitle = styled.p`
   font-feature-settings: 'tnum' on, 'onum' on;
 `
 
-const SockCount = styled.p`
+const WineCount = styled.p`
   color: #aeaeae;
   font-weight: 400;
   margin: 0px;

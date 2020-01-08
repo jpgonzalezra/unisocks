@@ -1,3 +1,3 @@
-# [Viniswap](https://unisocks.exchange)
+# [Viniswap](https://openvino.exchange)
 
-An experiment in dynamically priced merch.
+TODO:

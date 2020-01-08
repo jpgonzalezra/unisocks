@@ -4,12 +4,12 @@ import { useAppContext } from '../../context'
 import { Header } from '../Body'
 import { amountFormatter } from '../../utils'
 
-export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOCKS }) {
+export default function Body({ totalSupply, reserveWINESToken, ready, balanceWINES }) {
   const [state] = useAppContext()
 
   return (
     <AppWrapper overlay={state.visible}>
-      <Header totalSupply={totalSupply} ready={ready} balanceSOCKS={balanceSOCKS} setShowConnect={() => {}} />
+      <Header totalSupply={totalSupply} ready={ready} balanceWINES={balanceWINES} setShowConnect={() => {}} />
       <Content>
         <Title>MTB Stats</Title>
         <Description>
@@ -37,7 +37,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
             </span>
             MTB Pool
           </p>
-          <p>{amountFormatter(reserveSOCKSToken, 18, 0)}</p>
+          <p>{amountFormatter(reserveWINESToken, 18, 0)}</p>
         </Description>
         <Shim />
         <Footer>

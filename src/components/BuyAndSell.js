@@ -67,7 +67,7 @@ export default function BuyAndSell({
   validateSell,
   dollarPrice,
   pending,
-  reserveSOCKSToken,
+  reserveWINESToken,
   sell,
   dollarize,
   setCurrentTransaction,
@@ -213,7 +213,7 @@ export default function BuyAndSell({
           <CurrentPrice>
             {/* {dollarPrice && `$${amountFormatter(dollarPrice, 18, 2)} USD`} */}
             <USDPrice>{renderFormData()}</USDPrice>
-            <SockCount>{reserveSOCKSToken && `${amountFormatter(reserveSOCKSToken, 18, 0)}/500 available`}</SockCount>
+            <WineCount>{reserveWINESToken && `${amountFormatter(reserveWINESToken, 18, 0)}/500 available`}</WineCount>
           </CurrentPrice>
           <IncrementToken />
         </InfoFrame>
@@ -323,7 +323,7 @@ const ImgStyle = styled.img`
   padding: 2rem 0 2rem 0;
   box-sizing: border-box;
 `
-const SockCount = styled.span`
+const WineCount = styled.span`
   color: #aeaeae;
   font-weight: 400;
   margin: 0px;

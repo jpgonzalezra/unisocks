@@ -69,9 +69,9 @@ export default function Checkout({
   validateSell,
   sell,
   burn,
-  balanceSOCKS,
+  balanceWINES,
   dollarPrice,
-  reserveSOCKSToken,
+  reserveWINESToken,
   dollarize,
   currentTransactionHash,
   currentTransactionType,
@@ -161,7 +161,7 @@ export default function Checkout({
             currentTransactionHash={currentTransactionHash}
             setShowConnect={setShowConnect}
             dollarPrice={dollarPrice}
-            reserveSOCKSToken={reserveSOCKSToken}
+            reserveWINESToken={reserveWINESToken}
             pending={pending}
           />
         )
@@ -170,7 +170,7 @@ export default function Checkout({
           <Redeem
             ready={ready}
             burn={burn}
-            balanceSOCKS={balanceSOCKS}
+            balanceWINES={balanceWINES}
             dollarize={dollarize}
             setCurrentTransaction={setCurrentTransaction}
             setShowConnect={setShowConnect}

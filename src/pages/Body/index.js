@@ -198,11 +198,11 @@ export default function Body({
         </Info>
         <BuyButtons balanceWINES={balanceWINES} />
         <RedeemButton balanceWINES={balanceWINES} />
-        {!!account && (
+        {/*!!account && (
           <Link style={{ textDecoration: 'none' }} to="/status">
             <OrderStatusLink>Check order status?</OrderStatusLink>
           </Link>
-        )}
+        )*/}
       </Content>
       <Checkout
         selectedTokenSymbol={selectedTokenSymbol}

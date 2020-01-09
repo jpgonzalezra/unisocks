@@ -7,7 +7,7 @@ import { amountFormatter } from '../utils'
 import Gallery from './Gallery'
 
 export default function Card({ totalSupply, dollarPrice, reserveWINESToken }) {
-  const tokenName = process.env.TOKEN_NAME ? process.env.TOKEN_NAME : 'MTB';
+  const tokenName = process.env.TOKEN_NAME;
   return (
     <Tilt
       style={{ background: '#000', borderRadius: '8px' }}

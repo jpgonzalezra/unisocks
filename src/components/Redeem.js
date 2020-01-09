@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 
 import { useAppContext } from '../context'
 import Button from './Button'
-import RedeemForm from './RedeemForm'
 import { amountFormatter } from '../utils'
 
 import IncrementToken from './IncrementToken'
@@ -30,6 +29,8 @@ const config = {
   height: '10px',
   colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a']
 }
+
+const tokenName = process.env.TOKEN_NAME ? process.env.TOKEN_NAME : 'MTB';
 
 export function Controls({ closeCheckout, theme, type }) {
   return (
@@ -70,7 +71,7 @@ export default function Redeem({
   const [lastTransactionHash, setLastTransactionHash] = useState('')
 
   const [hasBurnt, setHasBurnt] = useState(false)
-  const [userAddress, setUserAddress] = useState('')
+  const [userAddress] = useState('')
 
   const pending = !!transactionHash
 
@@ -142,20 +143,21 @@ export default function Redeem({
               <ImgStyle src={test} alt="Logo" hasPickedAmount={hasPickedAmount} />
               <Owned>
                 <p>{state.count} Viniswap</p>
-                <p style={{ fontSize: '14px', fontWeight: '500', marginTop: '16px', color: '#AEAEAE' }}>Edition MTB18</p>
+                <p style={{ fontSize: '14px', fontWeight: '500', marginTop: '16px', color: '#AEAEAE' }}>Edition {tokenName}</p>
               </Owned>
             </InfoFrame>
           </TopFrame>
 
           {/* <Count>2/3</Count> */}
-          <CheckoutPrompt>Where should we send them?</CheckoutPrompt>
-          <RedeemFrame
+          <CheckoutPrompt>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</CheckoutPrompt>
+          {/*<RedeemFrame
             burn={burn}
             setHasConfirmedAddress={setHasConfirmedAddress}
             setUserAddress={setUserAddress}
             numberBurned={numberBurned}
-          />
-          <Back>
+          />*/}
+
+          {/*<Back>
             <span
               onClick={() => {
                 setNumberBurned()
@@ -164,8 +166,8 @@ export default function Redeem({
             >
               back
             </span>
-          </Back>
-        </>
+          </Back>*/}
+            </>
       )
     } else if (!hasBurnt) {
       return (
@@ -439,10 +441,6 @@ const ButtonFrame = styled(Button)`
   margin: 16px;
   height: 48px;
   padding: 16px;
-`
-
-const RedeemFrame = styled(RedeemForm)`
-  width: 100%;
 `
 
 const EtherscanLink = styled.a`

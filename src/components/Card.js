@@ -7,6 +7,7 @@ import { amountFormatter } from '../utils'
 import Gallery from './Gallery'
 
 export default function Card({ totalSupply, dollarPrice, reserveWINESToken }) {
+  const tokenName = process.env.TOKEN_NAME ? process.env.TOKEN_NAME : 'MTB';
   return (
     <Tilt
       style={{ background: '#000', borderRadius: '8px' }}
@@ -14,7 +15,7 @@ export default function Card({ totalSupply, dollarPrice, reserveWINESToken }) {
     >
       <CardWrapper>
         <Title>Viniswap</Title>
-        <SubTitle>$MTB18</SubTitle>
+        <SubTitle>{tokenName}</SubTitle>
         <Gallery />
         <MarketData>
           <span>

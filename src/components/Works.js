@@ -40,6 +40,9 @@ export const EtherscanLink = styled.a`
 `
 
 export default function Works({ closeCheckout }) {
+  const tokenName = process.env.TOKEN_NAME ? process.env.TOKEN_NAME : 'MTB';
+  const tokenSupply = process.env.TOKEN_SUPPLY ? process.env.TOKEN_SUPPLY : '16384';
+
   return (
     <WorksFrame>
       <Controls closeCheckout={closeCheckout} theme={'dark'} />
@@ -59,7 +62,7 @@ export default function Works({ closeCheckout }) {
       <Title>Unipay:</Title>
       <Desc>
         Buying or selling wine uses the uniswap protocol and accepts any token input as a payment method. The pool of
-        MTB is a uniswap pool where 16384 MTB18 tokens were deposited along with the starting value of ETH.{' '}
+        MTB is a uniswap pool where {tokenSupply} {tokenName} tokens were deposited along with the starting value of ETH.{' '}
       </Desc>
       <Desc>
         <a href="https://docs.uniswap.io/" target="_blank" rel="noopener noreferrer">

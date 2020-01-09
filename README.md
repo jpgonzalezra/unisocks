@@ -52,20 +52,37 @@ yarn install
 
 ## :rocket: Usage
 
-1- 
-    Then, you can modify the .env file
-
+* 1- git clone git@github.com:OpenVino/viniswap.git
+* 2- cd viniswap
+* 3- create .env file and complete
+for example: 
+---
+MTB18
+---
     SKIP_PREFLIGHT_CHECK=true
     REACT_APP_PROVIDER_URL=https://mainnet.infura.io/v3/XXXXXXXX
     REACT_APP_TOKEN_NAME=MTB18
     REACT_APP_TOKEN_SUPPLY=16384
     REACT_APP_TOKEN_ADDRESS=0x1bcfd19f541eb62c8cfebe53fe72bf2afc35a255
     REACT_APP_REDEEM_MESSAGE='You can redeem your MTB18 tokens for bottles of wine, starting on May 6, 2021.'
+---
+MTB19
+---
+    SKIP_PREFLIGHT_CHECK=true
+    REACT_APP_PROVIDER_URL=https://mainnet.infura.io/v3/XXXXXXXX
+    REACT_APP_TOKEN_NAME=MTB19
+    REACT_APP_TOKEN_SUPPLY=17707
+    REACT_APP_TOKEN_ADDRESS=0x87ab739464881af0011052d4ca0b0d657e8c3b48
+    REACT_APP_REDEEM_MESSAGE='You can redeem your MTB18 tokens for bottles of wine, starting on May 6, 2022.'
+---
 
-2- 
-    Insert images: nfc.png, sent.png and test.png to src/components/Gallery
+* 4 - 
+    Insert images on src/components/Gallery: 
+    * nfc.png
+    * sent.png 
+    * test.png
 
-3-
+* 5 
 
 ```sh
 yarn start
@@ -82,3 +99,13 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 ## :scroll: License
 
 [MIT](LICENSE)
+
+### Project based on Unisocks
+##### modified files:
+
+TODO:
+
+### Want to know more?
+Join our social media channels and become part of Marmo’s Community!
+
+* [Documentation](http://wiki.costaflores.com/)

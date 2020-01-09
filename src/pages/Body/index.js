@@ -167,7 +167,7 @@ export default function Body({
       <Content>
         <Card totalSupply={totalSupply} dollarPrice={dollarPrice} reserveWINESToken={reserveWINESToken} />{' '}
         <Info>
-          <div style={{ marginBottom: '4px' }}>Buy and sell real wine with digital currency.</div>
+          <div style={{ marginBottom: '4px' }}>Buy and sell delicious organic Argentine wine with digital currency.</div>
           <div style={{ marginBottom: '4px' }}>
             Delivered on demand.{' '}
             <a

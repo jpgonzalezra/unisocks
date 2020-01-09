@@ -63,8 +63,12 @@ export default function Works({ closeCheckout }) {
         supply and demand, and the valuation changes over time...like a fine wine!
       </Desc>
       <Desc>
-        Buying or selling wine uses the uniswap protocol and accepts any token input as a payment method. The pool of
-        {process.env.REACT_APP_TOKEN_NAME} is a uniswap pool where {tokenSupply} {tokenName} tokens were deposited along with the starting value of ETH.{' '}
+        Buying or selling wine uses the uniswap protocol and accepts any token input as a payment method. The pool of {process.env.REACT_APP_TOKEN_NAME} is a uniswap pool where {tokenSupply} {tokenName} tokens were deposited along with the starting value of ETH.{' '}
+      </Desc>
+      <Desc>
+        <a href="https://costaflores.com/" target="_blank" rel="noopener noreferrer">
+        Costaflores.
+        </a>
       </Desc>
       <Desc>
         <a href="https://docs.uniswap.io/" target="_blank" rel="noopener noreferrer">

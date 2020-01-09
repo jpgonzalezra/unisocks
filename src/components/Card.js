@@ -6,8 +6,8 @@ import { amountFormatter } from '../utils'
 
 import Gallery from './Gallery'
 
+const tokenName = process.env.REACT_APP_TOKEN_NAME;
 export default function Card({ totalSupply, dollarPrice, reserveWINESToken }) {
-  const tokenName = process.env.TOKEN_NAME;
   return (
     <Tilt
       style={{ background: '#000', borderRadius: '8px' }}

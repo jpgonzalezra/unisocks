@@ -32,7 +32,7 @@ export function Header({ totalSupply, ready, balanceWINES, setShowConnect }) {
             <span role="img" aria-label="fire">
               
             </span>{' '}
-            {16384 - totalSupply} <HideMobile>redeemed</HideMobile>
+            {process.env.REACT_APP_TOKEN_SUPPLY - totalSupply} <HideMobile>redeemed</HideMobile>
           </Burned>
         )}
         <Account onClick={() => handleAccount()} balanceWINES={balanceWINES}>

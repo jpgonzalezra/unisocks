@@ -30,8 +30,7 @@ const config = {
   colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a']
 }
 
-const tokenName = process.env.TOKEN_NAME ? process.env.TOKEN_NAME : 'MTB';
-
+const tokenName = process.env.REACT_APP_TOKEN_NAME;
 export function Controls({ closeCheckout, theme, type }) {
   return (
     <FrameControls>

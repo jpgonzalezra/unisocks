@@ -40,9 +40,8 @@ export const EtherscanLink = styled.a`
 `
 
 export default function Works({ closeCheckout }) {
-  const tokenName = process.env.TOKEN_NAME ? process.env.TOKEN_NAME : 'MTB';
-  const tokenSupply = process.env.TOKEN_SUPPLY ? process.env.TOKEN_SUPPLY : '16384';
-
+  const tokenName = process.env.REACT_APP_TOKEN_NAME;
+  const tokenSupply = process.env.REACT_APP_TOKEN_SUPPLY;
   return (
     <WorksFrame>
       <Controls closeCheckout={closeCheckout} theme={'dark'} />

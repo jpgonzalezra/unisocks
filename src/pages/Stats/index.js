@@ -19,7 +19,7 @@ export default function Body({ totalSupply, reserveWINESToken, ready, balanceWIN
             </span>
             Initial MTB
           </p>
-          <p>16384</p>
+          <p>{process.env.REACT_APP_TOKEN_SUPPLY}</p>
         </Description>
         <Description>
           <p>
@@ -28,7 +28,7 @@ export default function Body({ totalSupply, reserveWINESToken, ready, balanceWIN
             </span>
             Redeemed MTB
           </p>
-          <p>{16384 - totalSupply}</p>
+          <p>{process.env.REACT_APP_TOKEN_SUPPLY - totalSupply}</p>
         </Description>
         <Description>
           <p>

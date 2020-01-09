@@ -51,15 +51,15 @@ export default function Works({ closeCheckout }) {
         One {process.env.REACT_APP_TOKEN_NAME} token entitles you to one bottle of delicious organic Argentine wine (Mike Tango Bravo 2018 - a blend of Malbec / Petit Verdot / Cabernet Sauvignon) from Costaflores Organic Vineyard.
       </Desc>
       <Desc>
-      <a href="https://www.youtube.com/watch?v=7ZYISUzJBMo&feature=youtu.be" target="_blank" rel="noopener noreferrer">Watch here to understand how the entire Openvino process works.</a> 
+        <a href="https://www.youtube.com/watch?v=7ZYISUzJBMo&feature=youtu.be" target="_blank" rel="noopener noreferrer">Watch here to understand how the entire Openvino process works.</a>
       </Desc>
       <Desc>
         You can sell the token back at any time, and beginning on May 6, 2021, you can redeem your MTB18 token for 1 bottle of wine.
       </Desc>
       <Title>How it's priced:</Title>
       <Desc>
-        The token price is based on our wine production cost, and is initially defined during the annual vintage ICO (May 6 - July 25 each year). 
-        Each buy/sell will move the price. The increase or decrease follows the Uniswap bonding curve. So, the price of our wines are defined by 
+        The token price is based on our wine production cost, and is initially defined during the annual vintage ICO (May 6 - July 25 each year).
+        Each buy/sell will move the price. The increase or decrease follows the Uniswap bonding curve. So, the price of our wines are defined by
         supply and demand, and the valuation changes over time...like a fine wine!
       </Desc>
       <Desc>
@@ -70,21 +70,22 @@ export default function Works({ closeCheckout }) {
         <a href="https://docs.uniswap.io/" target="_blank" rel="noopener noreferrer">
           Learn more about how uniswap works.
         </a>
+      </Desc>
+      <Desc>
         <a href="http://wiki.costaflores.com/" target="_blank" rel="noopener noreferrer">
           See the inner workings of the Openvino project.
         </a>
+      </Desc>
+      <Desc>
         <a href="https://t.me/joinchat/G5ohPEYvPAIvt48N1yrCRQ" target="_blank" rel="noopener noreferrer">
           Join our telegram group.
         </a>
-        <a href="https://docs.uniswap.io/" target="_blank" rel="noopener noreferrer">
-          Get in touch.
-        </a>
       </Desc>
       <Desc>
-        <a href="mailto:contact@uniswap.io" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:info@costaflores.com" target="_blank" rel="noopener noreferrer">
           Get in touch.
         </a>
       </Desc>
-    </WorksFrame>
+    </WorksFrame >
   )
 }

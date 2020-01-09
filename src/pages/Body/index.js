@@ -144,7 +144,6 @@ export default function Body({
   reserveWINESToken,
   totalSupply
 }) {
-  const { account } = useWeb3Context()
   const [currentTransaction, _setCurrentTransaction] = useState({})
   const setCurrentTransaction = useCallback((hash, type, amount) => {
     _setCurrentTransaction({ hash, type, amount })
@@ -275,12 +274,6 @@ const Info = styled.div`
     cursor: pointer;
     text-decoration: underline;
   }
-`
-
-const OrderStatusLink = styled.p`
-  color: ${props => props.theme.viniswapOrange};
-  text-align: center;
-  font-size: 0.6rem;
 `
 
 const Unicorn = styled.p`

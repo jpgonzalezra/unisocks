@@ -169,7 +169,7 @@ export default function Body({
         <Info>
           <div style={{ marginBottom: '4px' }}>Buy and sell delicious organic Argentine wine with digital currency.</div>
           <div style={{ marginBottom: '4px' }}>
-            Delivered on demand.{' '}
+            {' '}
             <a
               href="/"
               onClick={e => {

@@ -16,7 +16,7 @@ export default createGlobalStyle`
 `
 
 const theme = {
-  viniswapOrange: '#D5841B',
+  viniswapOrange: '#840c4a',
   primary: '#2B2B2B',
   secondary: '#F1F2F6',
   text: '#000',

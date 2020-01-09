@@ -1,6 +1,6 @@
-# Readme Winiswap ![language](https://img.shields.io/badge/language-javascript-blue.svg)
+# Readme viniswap ![language](https://img.shields.io/badge/language-javascript-blue.svg)
 
-> Winiswap is a wine exchange
+> viniswap is a wine exchange
 
 ## :books: Table of Contents
 
@@ -44,7 +44,7 @@ If `Node.js` or `YARN` is not installed you can install them on [this link](http
 
 Don't forget to update `YARN` after installing `Node.js`:
 
-### Then install winiswap
+### Then install viniswap
 
 ```sh
 yarn install
@@ -73,7 +73,7 @@ yarn start
 
 ## :hammer_and_wrench: Support
 
-Please [open an issue](https://github.com/OpenVino/winiswap) for support.
+Please [open an issue](https://github.com/OpenVino/viniswap) for support.
 
 ## :memo: Contributing
 

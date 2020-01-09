@@ -338,9 +338,9 @@ const ButtonFrame = styled.button`
   cursor: pointer;
   pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
 
-  background: linear-gradient(97.28deg, #d5841b 2.08%, #e9a853 106.51%);
+  background: linear-gradient(97.28deg, #840c4a 2.08%, #840c4a 106.51%);
   box-shadow: 0px 4px 20px rgba(239, 162, 250, 0.7);
-  background: ${props => (props.disabled ? '#f1f2f6' : 'linear-gradient(97.28deg, #d5841b 2.08%, #e9a853 106.51%)')};
+  background: ${props => (props.disabled ? '#f1f2f6' : 'linear-gradient(97.28deg, #840c4a 2.08%, #840c4a 106.51%)')};
   box-shadow: ${props => (props.disabled ? 'none' : '0px 4px 20px rgba(239, 162, 250, 0.7)')};
   color: ${props => (props.disabled ? '#aeaeae' : props.theme.white)};
   transform: scale(1);

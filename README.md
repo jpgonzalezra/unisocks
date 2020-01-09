@@ -12,9 +12,9 @@
 
 ## :package: Installation
 
-### First check if you have NPM installed
+### First check if you have YARN installed
 
-Before installing this Readme Generator you need to check if you have `Node.js`and `NPM` installed on your computer.
+Before installing this Readme Generator you need to check if you have `Node.js`and `YARN` installed on your computer.
 
 To check if you have `Node.js` installed, run this command in your terminal:
 
@@ -66,7 +66,7 @@ yarn install
     Insert images: nfc.png, sent.png and test.png to src/components/Gallery
 
 3-
- 
+
 ```sh
 yarn start
 ```

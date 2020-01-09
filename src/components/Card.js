@@ -34,10 +34,10 @@ export default function Card({ totalSupply, dollarPrice, reserveWINESToken }) {
 
 const CardWrapper = styled.div`
   /* max-width: 300px; */
-  background: #f1ede2;
+  background: #840c4a;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
-  color: white;
+  color: #f1ede2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

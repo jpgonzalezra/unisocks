@@ -94,7 +94,7 @@ export default function Redeem({
         <ButtonFrame
           className="button"
           disabled={false}
-          text={account === null ? 'Connect Wallet' : 'Redeem MTB'}
+          text={account === null ? 'Connect Wallet' : `Redeem ${process.env.REACT_APP_TOKEN_NAME}`}
           type={'cta'}
           onClick={() => {
             setConnector('Injected', { suppressAndThrowErrors: true }).catch(() => {
@@ -112,7 +112,7 @@ export default function Redeem({
             <InfoFrame pending={pending}>
               <Owned>
                 <WineCount>You own {balanceWINES && `${amountFormatter(balanceWINES, 18, 0)}`}</WineCount>
-                <p>Redeem MTB</p>
+                <p>Redeem {process.env.REACT_APP_TOKEN_NAME}</p>
               </Owned>
               <IncrementToken
                 initialValue={Number(amountFormatter(balanceWINES, 18, 0))}
@@ -148,7 +148,8 @@ export default function Redeem({
           </TopFrame>
 
           {/* <Count>2/3</Count> */}
-          <CheckoutPrompt>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</CheckoutPrompt>
+          <CheckoutPrompt>{process.env.REACT_APP_REDEEM_MESSAGE}</CheckoutPrompt>
+          <CheckoutPrompt> </CheckoutPrompt>
           {/*<RedeemFrame
             burn={burn}
             setHasConfirmedAddress={setHasConfirmedAddress}
@@ -226,7 +227,7 @@ export default function Redeem({
             disabled={pending}
             pending={pending}
             // text={pending ? `Waiting for confirmation...` : `Redeem ${numberBurned} MTB`}
-            text={pending ? `Waiting for confirmation...` : `Place order (Redeem ${numberBurned} MTB) `}
+            text={pending ? `Waiting for confirmation...` : `Place order (Redeem ${numberBurned} ${process.env.REACT_APP_TOKEN_NAME}) `}
             type={'cta'}
             onClick={() => {
               burn(numberBurned.toString())

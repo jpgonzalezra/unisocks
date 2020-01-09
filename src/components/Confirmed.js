@@ -98,7 +98,7 @@ export default function Confirmed({ hash, type, amount, clearLastTransaction, cl
           </EtherscanLink>
         </CheckoutPrompt>
         <ButtonFrame
-          text={`Redeem your MTB now`}
+          text={`Redeem your ${process.env.REACT_APP_TOKEN_NAME} now`}
           type={'cta'}
           onClick={() => {
             clearLastTransaction()

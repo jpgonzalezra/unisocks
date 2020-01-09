@@ -91,7 +91,7 @@ export default function Body({ totalSupply, ready, balanceWINES }) {
                           timeStyle: 'short'
                         })}
                       </li>
-                      <li>MTB Redeemed: {d.numberOfWines}</li>
+                      <li>{process.env.REACT_APP_TOKEN_NAME} Redeemed: {d.numberOfWines}</li>
                       <li>
                         Status:{' '}
                         {d.invalid

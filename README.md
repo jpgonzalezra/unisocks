@@ -1,6 +1,7 @@
 # Readme viniswap ![language](https://img.shields.io/badge/language-javascript-blue.svg)
 
 > viniswap is a wine exchange
+> DEMO: https://thirsty-shirley-1c8fc3.netlify.com/
 
 ## :books: Table of Contents
 
@@ -52,8 +53,7 @@ yarn install
 
 ## :rocket: Usage
 
-* 1 - git clone git@github.com:OpenVino/viniswap.git or 
-    - git clone https://github.com/OpenVino/viniswap.git
+* 1 - git clone git@github.com:OpenVino/viniswap.git or git clone https://github.com/OpenVino/viniswap.git
 * 2- cd viniswap
 * 3- create .env file and complete
 for example: 

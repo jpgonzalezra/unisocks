@@ -137,6 +137,5 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 
 
 ### Want to know more?
-Join our social media channels and become part of Marmo’s Community!
 
 * [Documentation](http://wiki.costaflores.com/)

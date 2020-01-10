@@ -213,7 +213,7 @@ export default function BuyAndSell({
           <CurrentPrice>
             {/* {dollarPrice && `$${amountFormatter(dollarPrice, 18, 2)} USD`} */}
             <USDPrice>{renderFormData()}</USDPrice>
-            <WineCount>{reserveWINESToken && `${amountFormatter(reserveWINESToken, 18, 0)}/500 available`}</WineCount>
+            <WineCount>{reserveWINESToken && `${amountFormatter(reserveWINESToken, 18, 0)}/${process.env.REACT_APP_TOKEN_SUPPLY} available`}</WineCount>
           </CurrentPrice>
           <IncrementToken />
         </InfoFrame>

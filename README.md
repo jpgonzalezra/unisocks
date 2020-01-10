@@ -103,7 +103,35 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 ### Project based on Unisocks
 ##### modified files:
 
-TODO:
+* README.md
+* functions/getEntries.js
+* functions/submission-created.js
+* package.json
+* public/favicon.ico
+* public/favicon_.ico
+* public/index.html
+* public/manifest.json
+* src/components/Button.js
+* src/components/BuyAndSell.js
+* src/components/Card.js
+* src/components/Checkout.js
+* src/components/Confirmed.js
+* src/components/Gallery/nfc.png
+* src/components/Gallery/sent.png
+* src/components/Gallery/test.png
+* src/components/Redeem.js
+* src/components/RedeemButton.js
+* src/components/RedeemForm.js
+* src/components/SelectToken.js
+* src/components/Web3ReactManager/styles.js
+* src/components/Works.js
+* src/pages/Body/index.js
+* src/pages/Main/index.js
+* src/pages/Stats/index.js
+* src/pages/Status/index.js
+* src/theme/index.js
+* src/utils/index.js
+
 
 ### Want to know more?
 Join our social media channels and become part of Marmo’s Community!

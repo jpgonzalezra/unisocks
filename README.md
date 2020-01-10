@@ -66,6 +66,7 @@ MTB18
     REACT_APP_TOKEN_SUPPLY=16384
     REACT_APP_TOKEN_ADDRESS=0x1bcfd19f541eb62c8cfebe53fe72bf2afc35a255
     REACT_APP_REDEEM_MESSAGE='You can redeem your MTB18 tokens for bottles of wine, starting on May 6, 2021.'
+    PORT=4000
 ---
 MTB19
 ---
@@ -75,6 +76,7 @@ MTB19
     REACT_APP_TOKEN_SUPPLY=17707
     REACT_APP_TOKEN_ADDRESS=0x87ab739464881af0011052d4ca0b0d657e8c3b48
     REACT_APP_REDEEM_MESSAGE='You can redeem your MTB18 tokens for bottles of wine, starting on May 6, 2022.'
+    PORT=4001
 ---
 
 * 4 - 

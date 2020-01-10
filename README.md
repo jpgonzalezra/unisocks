@@ -12,9 +12,9 @@
 
 ## :package: Installation
 
-### First check if you have YARN installed
+### First check
 
-Before installing this Readme Generator you need to check if you have `Node.js`and `YARN` installed on your computer.
+You need to check if you have `Node.js`and `YARN` installed on your computer.
 
 To check if you have `Node.js` installed, run this command in your terminal:
 
@@ -52,7 +52,8 @@ yarn install
 
 ## :rocket: Usage
 
-* 1- git clone git@github.com:OpenVino/viniswap.git
+* 1 - git clone git@github.com:OpenVino/viniswap.git or 
+    - git clone https://github.com/OpenVino/viniswap.git
 * 2- cd viniswap
 * 3- create .env file and complete
 for example: 

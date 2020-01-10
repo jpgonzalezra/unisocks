@@ -22,7 +22,7 @@ To check if you have `Node.js` installed, run this command in your terminal:
 node -v
 ```
 
-If you get an answer like this, it means that `Node.js` is installed and you may go to the [next section](#then-install-the-readme-generator).
+If you get an answer like this, it means that `Node.js` is installed and you may go to the https://nodejs.org/es/
 
 ```sh
 v10.18.0
@@ -34,7 +34,7 @@ To confirm that you have `YARN` installed you can run this command in your termi
 yarn -v
 ```
 
-If you get an answer like this, it means that `Node.js` is installed and you may go to the [next section](#then-install-the-readme-generator).
+If you get an answer like this, it means that `Node.js` is installed and you may go to the https://yarnpkg.com/lang/en/
 
 ```sh
 1.21.1

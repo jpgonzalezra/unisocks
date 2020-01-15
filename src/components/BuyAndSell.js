@@ -213,7 +213,7 @@ export default function BuyAndSell({
           <CurrentPrice>
             {/* {dollarPrice && `$${amountFormatter(dollarPrice, 18, 2)} USD`} */}
             <USDPrice>{renderFormData()}</USDPrice>
-            <WineCount>{reserveWINESToken && `${amountFormatter(reserveWINESToken, 18, 0)}/500 available`}</WineCount>
+            <WineCount>{reserveWINESToken && `${amountFormatter(reserveWINESToken, 18, 0)}/${process.env.REACT_APP_TOKEN_SUPPLY} available`}</WineCount>
           </CurrentPrice>
           <IncrementToken />
         </InfoFrame>
@@ -286,8 +286,7 @@ export default function BuyAndSell({
 const TopFrame = styled.div`
   width: 100%;
   max-width: 375px;
-  background: #000000;
-  background: linear-gradient(162.92deg, #2b2b2b 12.36%, #000000 94.75%);
+  background: #840c4a;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   color: white;

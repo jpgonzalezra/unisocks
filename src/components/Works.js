@@ -48,13 +48,13 @@ export default function Works({ closeCheckout }) {
 
       <Title>How it works:</Title>
       <Desc>
-        One {process.env.REACT_APP_TOKEN_NAME} token entitles you to one bottle of delicious organic Argentine wine (Mike Tango Bravo 2018 - a blend of Malbec / Petit Verdot / Cabernet Sauvignon) from Costaflores Organic Vineyard.
+        One {process.env.REACT_APP_TOKEN_NAME} token entitles you to one bottle of delicious organic Argentine wine (Mike Tango Bravo {process.env.REACT_APP_YEAR} - a blend of Malbec / Petit Verdot / Cabernet Sauvignon) from Costaflores Organic Vineyard.
       </Desc>
       <Desc>
         <a href="https://www.youtube.com/watch?v=7ZYISUzJBMo&feature=youtu.be" target="_blank" rel="noopener noreferrer">Watch here to understand how the entire Openvino process works.</a>
       </Desc>
       <Desc>
-        You can sell the token back at any time, and beginning on May 6, 2021, you can redeem your MTB18 token for 1 bottle of wine.
+        {process.env.REACT_APP_REDEEM_MESSAGE}
       </Desc>
       <Title>How it's priced:</Title>
       <Desc>
@@ -64,11 +64,6 @@ export default function Works({ closeCheckout }) {
       </Desc>
       <Desc>
         Buying or selling wine uses the uniswap protocol and accepts any token input as a payment method. The pool of {process.env.REACT_APP_TOKEN_NAME} is a uniswap pool where {tokenSupply} {tokenName} tokens were deposited along with the starting value of ETH.{' '}
-      </Desc>
-      <Desc>
-        <a href="https://costaflores.com/" target="_blank" rel="noopener noreferrer">
-        Costaflores.
-        </a>
       </Desc>
       <Desc>
         <a href="https://docs.uniswap.io/" target="_blank" rel="noopener noreferrer">

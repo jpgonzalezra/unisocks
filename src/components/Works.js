@@ -48,10 +48,10 @@ export default function Works({ closeCheckout }) {
 
       <Title>How it works:</Title>
       <Desc>
-        One {process.env.REACT_APP_TOKEN_NAME} token entitles you to one bottle of delicious organic Argentine wine (Mike Tango Bravo {process.env.REACT_APP_YEAR} - a blend of Malbec / Petit Verdot / Cabernet Sauvignon) from Costaflores Organic Vineyard.
+        One {process.env.REACT_APP_TOKEN_NAME} token entitles you to one bottle of delicious organic Argentine wine (Mike Tango Bravo {process.env.REACT_APP_YEAR} - a blend of Malbec / Petit Verdot / Cabernet Sauvignon) from <a href="https://costaflores.com/">Costaflores Organic Vineyard.</a>
       </Desc>
       <Desc>
-        <a href="https://www.youtube.com/watch?v=7ZYISUzJBMo&feature=youtu.be" target="_blank" rel="noopener noreferrer">Watch here to understand how the entire Openvino process works.</a>
+      Watch <a href="https://www.youtube.com/watch?v=7ZYISUzJBMo&feature=youtu.be" target="_blank" rel="noopener noreferrer"> here </a> to understand how the entire <a href="https://www.youtube.com/watch?v=GvhYdOVTmlM&feature=youtu.be" target="_blank" rel="noopener noreferrer"> Openvino </a> process works.
       </Desc>
       <Desc>
         {process.env.REACT_APP_REDEEM_MESSAGE}
@@ -60,7 +60,7 @@ export default function Works({ closeCheckout }) {
       <Desc>
         The token price is based on our wine production cost, and is initially defined during the annual vintage ICO (May 6 - July 25 each year).
         Each buy/sell will move the price. The increase or decrease follows the Uniswap bonding curve. So, the price of our wines are defined by
-        supply and demand, and the valuation changes over time...like a fine wine!
+        supply and demand, and the valuation changes over time...<a href="https://www.youtube.com/watch?v=PeXzm1L_Jyc&list=PLC67Nqxq04sy5cMoySL26NB91kH__DT8W&index=6&t=5s" target="_blank" rel="noopener noreferrer"> like a fine wine!</a>
       </Desc>
       <Desc>
         Buying or selling wine uses the uniswap protocol and accepts any token input as a payment method. The pool of {process.env.REACT_APP_TOKEN_NAME} is a uniswap pool where {tokenSupply} {tokenName} tokens were deposited along with the starting value of ETH.{' '}
